@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>画像アップロードページ</title>
+    <style>
+        #uploadedImage {
+            width: 50vw; /* viewport width の 50% */
+            height: auto; /* アスペクト比を保持 */
+            display: none; /* 最初は非表示 */
+        }
+    </style>
+</head>
+<body>
+    <input type="file" id="imageFile" accept="image/jpeg" style="display: none;" onchange="displayImage(event)">
+    <button onclick="document.getElementById('imageFile').click()">クリックして画像を選択</button>
+    <br>
+    <img id="uploadedImage" src="" alt="選択された画像">
+    <script src="script.js"></script>
+</body>
+</html>
