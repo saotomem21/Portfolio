@@ -1,5 +1,5 @@
 body {
-    background-color: #ffffff;  /* 画面全体の背景色を白に設定 (必要に応じて変更) */
+    background-color: #ffffff;  
 }
 
 .msr_btn13{
@@ -41,6 +41,6 @@ body {
 }
 
 button {
-    margin-right: 10px; /* 右側の余白を追加 */
-    margin-bottom: 20px; /* 下側の余白を追加 */
+    margin-right: 10px; 
+    margin-bottom: 20px; 
 }
