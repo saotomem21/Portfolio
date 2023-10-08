@@ -1,0 +1,46 @@
+body {
+    background-color: #ffffff;  /* 画面全体の背景色を白に設定 (必要に応じて変更) */
+}
+
+.msr_btn13{
+    height:53px;
+    padding-top:1px;
+    border: none;
+    background-color: #ffffff;
+    display: inline-block;
+}
+.msr_btn13 a{
+    border: none;
+    width: 80px;
+    height: 15px;
+    padding:7px;
+    color:#ffff00;
+    font-size: 15px;
+    line-height: 120%;
+    text-align: center;
+    text-decoration: none;
+    background: #008080;
+    display: block;
+    position:relative;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -webkit-box-shadow:4px 4px 0px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow:4px 4px 0px 0px rgba(0,0,0,0.2);
+    box-shadow:4px 4px 0px 0px rgba(0,0,0,0.2);
+    -webkit-transition: 0.3s ease-out;
+    -moz-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out;
+    transition: 0.3s ease-out;
+}
+.msr_btn13 a:hover{
+    margin:4px 0 0 4px ;
+    -webkit-box-shadow:0 0 0px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow:0 0 0px 0px rgba(0,0,0,0.2);
+    box-shadow:0 0 0px 0px rgba(0,0,0,0.2);
+}
+
+button {
+    margin-right: 10px; /* 右側の余白を追加 */
+    margin-bottom: 20px; /* 下側の余白を追加 */
+}
