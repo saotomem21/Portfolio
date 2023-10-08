@@ -6,8 +6,8 @@
     <title>画像アップロードページ</title>
     <style>
         #canvas {
-            max-width: 50vw; /* viewport width の 50% */
-            display: none; /* 最初は非表示 */
+            max-width: 50vw;
+            display: none;
         }
     </style>
 </head>
@@ -15,6 +15,7 @@
     <input type="file" id="imageFile" accept="image/jpeg" style="display: none;" onchange="displayImage(event)">
     <button onclick="document.getElementById('imageFile').click()">クリックして画像を選択</button>
     <button onclick="makeBlack()">黒くする</button>
+    <button onclick="restoreImage()">元に戻す</button>
     <br>
     <canvas id="canvas"></canvas>
     <script src="script.js"></script>
