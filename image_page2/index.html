@@ -9,8 +9,12 @@
 <body>
     <input type="file" id="imageFile" accept="image/jpeg" style="display: none;" onchange="displayImage(event)">
     <button onclick="document.getElementById('imageFile').click()">クリックして画像を選択</button>
+    <!-- 以下の行を変更 -->
     <button class="msr_btn13" onclick="makeBlack()"><a>黒くする</a></button>
     <button onclick="restoreImage()">元に戻す</button>
+    <button onclick="downloadImage()">画像をダウンロード</button>
+    <!-- Twitter共有リンク -->
+    <a href="https://twitter.com/share?url=https://yourwebsite.com&text=Check%20out%20my%20edited%20image%20%23ImageEditingApp" target="_blank">Twitterで共有</a>
     <br>
     <canvas id="canvas"></canvas>
     <script src="script.js"></script>
