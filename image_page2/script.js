@@ -17,6 +17,8 @@ function displayImage(event) {
 }
 
 function makeBlack() {
+    var btn = document.querySelector('.msr_btn13');
+    btn.classList.add('clicked');
     var canvas = document.getElementById('canvas');
     var ctx = canvas.getContext('2d');
     var imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
@@ -28,7 +30,13 @@ function makeBlack() {
         data[i + 2] = grayscale;
     }
     ctx.putImageData(imageData, 0, 0);
+
+    // setTimeout関数を使用して、クリック後0.3秒後にボタンのスタイルを元に戻します。
+    setTimeout(function() {
+        btn.classList.remove('clicked');
+    }, 300);
 }
+
 
 function restoreImage() {
     if (originalImageData) {
@@ -36,4 +44,15 @@ function restoreImage() {
         var ctx = canvas.getContext('2d');
         ctx.putImageData(originalImageData, 0, 0);  // 元の画像データを復元
     }
+}
+
+function downloadImage() {
+    var canvas = document.getElementById('canvas');
+    var imageURI = canvas.toDataURL("image/jpeg");
+    var link = document.createElement('a');
+    link.href = imageURI;
+    link.download = 'edited-image.jpeg';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
 }
