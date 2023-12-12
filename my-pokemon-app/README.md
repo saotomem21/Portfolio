@@ -1,3 +1,6 @@
+##これは私saotomem21が作成したポケモン図鑑webアプリです。##
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
