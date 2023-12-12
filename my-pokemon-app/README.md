@@ -1,4 +1,4 @@
-##これは私saotomem21が作成したポケモン図鑑webアプリです。##
+##これは私saotomem21が作成したポケモン図鑑webアプリです。
 
 
 # Getting Started with Create React App
