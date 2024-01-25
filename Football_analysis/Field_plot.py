@@ -41,8 +41,6 @@ ax.add_patch(centreCircle)
 
 #plt.show()
 
-# 既存のコード（サッカーフィールドの描画）...
-
 # センターサークルの追加
 centreCircle = plt.Circle((65, 45), 9.15, color="black", fill=False)
 ax.add_patch(centreCircle)
@@ -64,5 +62,5 @@ for i in range(len(data)):
              [int(data["Ystart"][i]),int(data["Yend"][i])],
              color="blue")
     plt.plot(int(data["Xstart"][i]),int(data["Ystart"][i]),"o", color="green")
-# プロットの表示
+
 plt.show()
